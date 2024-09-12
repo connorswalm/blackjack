@@ -1,5 +1,6 @@
 const { tens, suits } = require("./consts");
 
+//at some point I would like to refactor this to be able to display the correct move
 const calculateCorrectPairMove = (playerHand, dealerCard, suggestedMove) => {
   if (playerHand[0] === "A" && playerHand[1] === "A") {
     if (suggestedMove === "sp") {
