@@ -1,6 +1,6 @@
 function deal(shoe) {
-  if (shoe.length < 4) {
-    throw new Error("Shoe must contain at least 4 elements.");
+  if (shoe.length < 12) {
+    throw new Error("Shoe must contain at least 12 elements.");
   }
 
   let playerHand = [];
