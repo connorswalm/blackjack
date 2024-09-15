@@ -157,9 +157,11 @@ function blackJack() {
           // work in bets in the future
           const dealtCard = shoe.shift();
           console.log(`You are dealt a ${dealtCard}`);
-          currentPlayer.push(dealtCard);
+          currentPlayer["hand1"] = [...currentPlayer.hand1, dealtCard];
+          console.log(`Hand ${currentPlayer["hand1"]}`);
           stillPlayersTurn = false;
         } else if (playerChoice === "sp") {
+          //maybe add a stillCurrentHand while loop here to handle multiple hands?
           // add temporary player
         }
       }
